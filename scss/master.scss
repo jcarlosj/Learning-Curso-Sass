@@ -1,8 +1,10 @@
 $text: blue;
 $h1:   red;
 
+/* index.html */
 body {
     color: $text;
+    // Nesting
     h1 {
         color: $h1;
     }
