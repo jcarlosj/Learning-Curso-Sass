@@ -1,0 +1,27 @@
+.container {
+    color: $title;
+    margin: 0 auto;
+    max-width: 680px;
+    padding: 0 20px;
+}
+
+.box {
+    background-color: #E6EBE0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    .head {
+        border-bottom: 1px solid #9BC1BC;
+        padding-bottom: 10px;
+
+        h3 {
+            color: #5CA4A9;
+            margin: 0;
+        }
+    }
+
+    .content {
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,49 @@
+// Usando clases
+.btn {
+    background-color: #9BC1BC;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: .8em;
+    padding:10px 20px;
+    // Anidando propiedades de CSS
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+    
+    // Usando seudo clases
+    &:hover {
+        opacity: .8;
+    }
+
+    // Completando el nombre de la clase a partir del nombre de la clase anterior
+    &-cta {
+        background-color: #ED6A5A;
+        padding-left: 30px;
+        position: relative;
+
+        // Usando seudo selectores
+        &::before {
+            content: '';
+            display: block;
+            left: 15px;
+            position: absolute;
+            top: 18px;
+        
+            // Anidando propiedades de CSS
+            border: {
+                color: transparent;
+                left-color: white;   
+                style: solid;
+                width: 4px;
+            }
+        }
+    }
+
+}
+
+// Atajos usando subpropiedades de CSS (No aplica para: border-radius)
+// background: color url() position {
+//     blend-mode: overlay;
+// }
