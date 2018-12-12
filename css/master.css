@@ -1,3 +1,38 @@
+.container {
+  color: #888;
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 0 20px; }
 
+.box {
+  background-color: #E6EBE0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px; }
+  .box .head {
+    border-bottom: 1px solid #9BC1BC;
+    padding-bottom: 10px; }
+    .box .head h3 {
+      color: #5CA4A9;
+      margin: 0; }
+  .box .content {
+    padding-top: 10px; }
+
+body {
+  color: #444;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0; }
+  body h1 {
+    color: #888;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 1em; }
+  body h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin: 0 0 .5em 0; }
 
 /*# sourceMappingURL=master.css.map */
