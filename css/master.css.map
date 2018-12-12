@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAGA,gBAAgB;AAChB,IAAK;EACD,KAAK,EALF,IAAI;EAOP,OAAG;IACC,KAAK,EAPN,GAAG",
-"sources": ["../scss/master.scss"],
+"mappings": "AAEA,gBAAgB;AAChB,IAAK;EACD,KAAK,ECJF,IAAI;EDMP,OAAG;IACC,gBAAgB,ECLhB,MAAM;IDMN,KAAK,ECPN,GAAG;ECDV,UAAM;IACF,WAAW,EAAE,IAAI",
+"sources": ["../scss/master.scss","../scss/_variables.scss","../scss/_paragraphs.scss"],
 "names": [],
 "file": "master.css"
 }

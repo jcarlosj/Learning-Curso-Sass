@@ -1,11 +1,13 @@
-$text: blue;
-$h1:   red;
+@import 'variables';
 
 /* index.html */
 body {
     color: $text;
     // Nesting
     h1 {
+        background-color: $bg-h1;
         color: $h1;
     }
+    
+    @import '_paragraphs.scss';
 }

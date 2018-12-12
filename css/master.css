@@ -2,6 +2,9 @@
 body {
   color: blue; }
   body h1 {
+    background-color: orange;
     color: red; }
+  body p + p {
+    font-weight: bold; }
 
 /*# sourceMappingURL=master.css.map */
