@@ -2,3 +2,30 @@ $text: #444;
 $font-family: "Helvetica", sans-serif;
 $title: #888;
 $title-font-family: "Georgia", serif;
+
+// Valores tradicionales en CSS 
+$btn-color: #000;             // Colores 
+$num1: 10em;                    // Numeros con unidades de medida
+$num2: 6.8;                     // Numeros
+$cadena1: ' Hey ';              // Cadenas de texto entre comillas
+$cadena2: you;                  // Cadenas de texto sin comillas
+$message: $cadena1 + $cadena2;  // Concatenacion de cadenas
+$result: $num2 * $num1;         // Operaciones matematicas y logicas: >, <, ==, != a etc
+
+// Valores extendidos de Sass 
+$ancho: null;                   // Valores nulos
+$ancho: 250px;
+$alto: 20px;
+$alto: 25px !default;           // Valores por defecto
+
+.foot {
+    .btn {
+        &-cta::after {
+            color: $btn-color;
+            content: $message;
+            font-size: ( $num1 / $num2 - .6 );
+            height: $alto;
+            width: $ancho;
+        }
+    }
+}

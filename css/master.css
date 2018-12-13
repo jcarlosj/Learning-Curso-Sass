@@ -1,3 +1,10 @@
+.foot .btn-cta::after {
+  color: #000;
+  content: " Hey you";
+  font-size: 0.8705882353em;
+  height: 20px;
+  width: 250px; }
+
 .container {
   color: #888;
   margin: 0 auto;
