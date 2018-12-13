@@ -1,11 +1,8 @@
-.icon-facebook {
-  background-image: url("facebook.png"); }
+p {
+  color: green; }
 
-.icon-twitter {
-  background-image: url("twitter.png"); }
-
-.icon-linkedin {
-  background-image: url("linkedin.png"); }
+a {
+  color: blue; }
 
 .container {
   color: #888;

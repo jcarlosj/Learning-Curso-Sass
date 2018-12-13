@@ -3,14 +3,21 @@ $font-family: "Helvetica", sans-serif;
 $title: #888;
 $title-font-family: "Georgia", serif;
 
-// Listas en Sass
-$redes: facebook, twitter, linkedin;        // Lista
+// Mapas en Sass
+$color: (
+    autor: #FF0000,
+    editor: #FF6600,
+    admin: green,
+    super: blue
+);
 
-// Usa la directiva @each para iterar los elementos de la lista
-@each $item in $redes {
-    // Genera una clase para cada uno de los iconos referenciados en la lista
-    .icon-#{ $item } {                              // Concatena una clase con el nombre del item de la lista 
-        background-image: url( '#{ $item }.png' );  // Usa la interpolacion para generar el nombre de la imagen
-    }
-}   
+// Forma 1:
+p {
+    color: map-get( $map: $color, $key: admin );
+}
+// Forma 2:
+a {
+    color: map-get( $color, super ); 
+}
+
 
