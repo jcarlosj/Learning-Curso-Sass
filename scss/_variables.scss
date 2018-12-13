@@ -3,10 +3,14 @@ $font-family: "Helvetica", sans-serif;
 $title: #888;
 $title-font-family: "Georgia", serif;
 
-// Interpolacion en Sass
-$image: './image/logo.png';
+// Listas en Sass
+$redes: facebook, twitter, linkedin;        // Lista
 
-p {
-    background-image: url( '#{ $image }' );
-}
+// Usa la directiva @each para iterar los elementos de la lista
+@each $item in $redes {
+    // Genera una clase para cada uno de los iconos referenciados en la lista
+    .icon-#{ $item } {                              // Concatena una clase con el nombre del item de la lista 
+        background-image: url( '#{ $item }.png' );  // Usa la interpolacion para generar el nombre de la imagen
+    }
+}   
 

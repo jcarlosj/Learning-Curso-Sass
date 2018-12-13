@@ -1,5 +1,11 @@
-p {
-  background-image: url("./image/logo.png"); }
+.icon-facebook {
+  background-image: url("facebook.png"); }
+
+.icon-twitter {
+  background-image: url("twitter.png"); }
+
+.icon-linkedin {
+  background-image: url("linkedin.png"); }
 
 .container {
   color: #888;
