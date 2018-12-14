@@ -1,5 +1,5 @@
 // Condicionales 
-$color-fondo: #000000;
+$color-fondo: #F3F3F3;
 $porcentaje: lightness( $color-fondo );
 
 @if $porcentaje < 50% {
@@ -8,5 +8,13 @@ $porcentaje: lightness( $color-fondo );
         content: $porcentaje;
         color: white;
         background-color: $color-fondo;
+    }
+}
+@else {
+    .info-color {
+         /* Fondo Claro */
+         content: $porcentaje;
+         color: black;
+         background-color: $color-fondo;
     }
 }
