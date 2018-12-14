@@ -160,6 +160,40 @@
   margin: 0 10px;
   width: 768px; }
 
+/* Sistema de margenes izquierdos */
+.pre-1 {
+  margin-left: 84px; }
+
+.pre-2 {
+  margin-left: 168px; }
+
+.pre-3 {
+  margin-left: 252px; }
+
+.pre-4 {
+  margin-left: 336px; }
+
+.pre-5 {
+  margin-left: 420px; }
+
+.pre-6 {
+  margin-left: 504px; }
+
+.pre-7 {
+  margin-left: 588px; }
+
+.pre-8 {
+  margin-left: 672px; }
+
+.pre-9 {
+  margin-left: 756px; }
+
+.pre-10 {
+  margin-left: 840px; }
+
+.pre-11 {
+  margin-left: 924px; }
+
 body {
   color: #444;
   font-family: "Helvetica", sans-serif;

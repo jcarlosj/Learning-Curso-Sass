@@ -23,3 +23,13 @@ $social: ( facebook, #3B5998 ), ( twitter, #00ACED ), ( gplus, #DD4B39 );   // L
         width: ( 64px * $i );   // 768px / 12 = 64px
     }
 }
+
+/* Sistema de margenes izquierdos */
+// Iteramos para crear margenes izquierdos
+$e: 1;
+@while $e < 12 {
+    .pre-#{ $e } {
+        margin-left: ( 64px * $e ) + ( 20px * $e );
+    }
+    $e: $e + 1;
+}
