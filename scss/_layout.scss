@@ -6,8 +6,8 @@
 }
 
 .box {
-    @include box;
-
+    @include box( $box-bg, $box-br, 20px );
+    
     .head {
         border-bottom: 1px solid #9BC1BC;
         padding-bottom: 10px;

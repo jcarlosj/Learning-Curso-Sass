@@ -11,6 +11,9 @@ $color: (
     super: blue
 );
 
+$box-bg: #E6EBE0;
+$box-br: 5px;
+
 // Forma 1:
 p {
     color: map-get( $map: $color, $key: admin );
