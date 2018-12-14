@@ -26,3 +26,25 @@
 .box-grey {
     @include box( #2B3A34, 6px, 50px );
 }
+
+/* Forma 1: */ 
+// Uso de MediaQuery definido como Mixin
+.selector {
+    padding: 20px;
+    @include mq-tablet {
+        padding: 10px;
+    }
+}
+/* Forma 2: */ 
+// Uso de MediaQuery definido como Mixin
+@include mq-tablet {
+    .selector {
+        padding: 20px;
+    }
+    .selector-2 {
+        padding: 30px;
+    }
+    .selector-3 {
+        padding: 40px;
+    }
+}

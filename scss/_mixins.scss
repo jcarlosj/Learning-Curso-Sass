@@ -12,4 +12,11 @@
     @else {
         color: $text;
     }
- }
+}
+
+// Define un MediaQuery como un Mixin
+@mixin mq-tablet {
+    @media ( min-width: 680px ) and ( max-width: 1024px ) {
+        @content;       // Indica que un mixin acepta bloques de cdigo completos
+    }
+}

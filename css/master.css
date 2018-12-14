@@ -26,6 +26,23 @@
   padding: 25px;
   color: white; }
 
+/* Forma 1: */
+.selector {
+  padding: 20px; }
+  @media (min-width: 680px) and (max-width: 1024px) {
+    .selector {
+      padding: 10px; } }
+
+/* Forma 2: */
+@media (min-width: 680px) and (max-width: 1024px) {
+  .selector {
+    padding: 20px; }
+
+  .selector-2 {
+    padding: 30px; }
+
+  .selector-3 {
+    padding: 40px; } }
 .btn {
   background-color: #9BC1BC;
   border-radius: 4px;
