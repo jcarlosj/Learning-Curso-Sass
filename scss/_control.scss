@@ -1,0 +1,12 @@
+// Condicionales 
+$color-fondo: #000000;
+$porcentaje: lightness( $color-fondo );
+
+@if $porcentaje < 50% {
+    .info-color {
+        /* Fondo Oscuro */
+        content: $porcentaje;
+        color: white;
+        background-color: $color-fondo;
+    }
+}

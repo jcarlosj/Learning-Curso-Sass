@@ -1,3 +1,9 @@
+.info-color {
+  /* Fondo Oscuro */
+  content: 0%;
+  color: white;
+  background-color: #000000; }
+
 .container {
   color: #888;
   margin: 0 auto;
