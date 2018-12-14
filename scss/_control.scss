@@ -14,3 +14,12 @@ $social: ( facebook, #3B5998 ), ( twitter, #00ACED ), ( gplus, #DD4B39 );   // L
         }
     }
 }
+
+/* Sistema de Grillas */
+// Iteramos para crear el sistema de grillas al estilo de los frameworks de CSS
+@for $i from 1 through 12 {
+    .col-#{ $i } {
+        margin: 0 10px;
+        width: ( 64px * $i );   // 768px / 12 = 64px
+    }
+}

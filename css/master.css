@@ -111,6 +111,55 @@
   background-repeat: no-repeat;
   background-size: 20px 20px; }
 
+/* Sistema de Grillas */
+.col-1 {
+  margin: 0 10px;
+  width: 64px; }
+
+.col-2 {
+  margin: 0 10px;
+  width: 128px; }
+
+.col-3 {
+  margin: 0 10px;
+  width: 192px; }
+
+.col-4 {
+  margin: 0 10px;
+  width: 256px; }
+
+.col-5 {
+  margin: 0 10px;
+  width: 320px; }
+
+.col-6 {
+  margin: 0 10px;
+  width: 384px; }
+
+.col-7 {
+  margin: 0 10px;
+  width: 448px; }
+
+.col-8 {
+  margin: 0 10px;
+  width: 512px; }
+
+.col-9 {
+  margin: 0 10px;
+  width: 576px; }
+
+.col-10 {
+  margin: 0 10px;
+  width: 640px; }
+
+.col-11 {
+  margin: 0 10px;
+  width: 704px; }
+
+.col-12 {
+  margin: 0 10px;
+  width: 768px; }
+
 body {
   color: #444;
   font-family: "Helvetica", sans-serif;
