@@ -22,3 +22,7 @@
         padding-top: 10px;
     }
 }
+
+.box-grey {
+    @include box( #F2F2F2, 8px, 30px );
+}
