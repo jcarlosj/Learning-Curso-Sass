@@ -1,28 +1,16 @@
-// Condicionales 
-$color-fondo: #FF6600;
-$porcentaje: lightness( $color-fondo );
+// Bucles/Ciclos
+$social: ( facebook, #3B5998 ), ( twitter, #00ACED ), ( gplus, #DD4B39 );   // Lista anidada.
 
-@if $porcentaje < 50% {
-    .info-color {
-        /* Fondo Oscuro */
-        content: $porcentaje;
-        color: white;
-        background-color: $color-fondo;
-    }
-}
-@else if $porcentaje > 50% {
-    .info-color {
-         /* Fondo Claro */
-         content: $porcentaje;
-         color: black;
-         background-color: $color-fondo;
-    }
-}
-@else {
-    .info-color {
-        /* Fondo con 50% de equilibrio */
-        content: $porcentaje;
-        background-color: $color-fondo;
-        color: #F3F3F3;
+// Iteramos sobre cada uno de los elementos de las listas anidadas
+@each $nombre-red, $color-red in $social {
+    .btn-#{ $nombre-red } {
+        @include btn-social;
+        background: {
+            color: $color-red;
+            image: url( '../images/icon-#{ $nombre-red }.png' );
+            position: 8px 12px;
+            repeat: no-repeat;
+            size: 20px 20px;
+        }
     }
 }

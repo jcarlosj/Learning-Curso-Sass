@@ -1,4 +1,4 @@
-
+// Define estilos para las cajas
 @mixin box( $bg: #F2F2F2, $radius: null, $space: 20px ) {
     background-color: $bg;
     border-radius: $radius;
@@ -20,3 +20,17 @@
         @content;       // Indica que un mixin acepta bloques de cdigo completos
     }
 }
+
+// Define estilos para botones Redes Sociales
+@mixin btn-social {
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: .8em;
+    padding: 10px 20px 10px 32px;
+    // Anidando propiedades de CSS
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+}    
