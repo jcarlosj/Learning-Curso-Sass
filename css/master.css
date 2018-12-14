@@ -1,8 +1,8 @@
 .info-color {
-  /* Fondo Claro */
-  content: 95.2941176471%;
-  color: black;
-  background-color: #F3F3F3; }
+  /* Fondo con 50% de equilibrio */
+  content: 50%;
+  background-color: #FF6600;
+  color: #F3F3F3; }
 
 .container {
   color: #888;
