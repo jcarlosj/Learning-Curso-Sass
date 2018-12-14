@@ -1,5 +1,5 @@
 
-@mixin box( $bg, $radius, $space ) {
+@mixin box( $bg: #F2F2F2, $radius: null, $space: 20px ) {
     background-color: $bg;
     border-radius: $radius;
     margin-bottom: $space;
