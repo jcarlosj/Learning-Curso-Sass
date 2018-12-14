@@ -4,4 +4,12 @@
     border-radius: $radius;
     margin-bottom: $space;
     padding: ( $space / 2 );
-}
+
+    // Condicional usando las directivas @if @else
+    @if lightness( $bg ) < 50% {    // Con la funcion lightness() de Sass, podemos definir el porcentaje de claridad de un color dado.
+        color: white;
+    }
+    @else {
+        color: $text;
+    }
+ }
