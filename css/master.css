@@ -19,6 +19,18 @@
 .btn-2 {
   color: yellow; }
 
+.btn-facebook, .btn-twitter, .btn-gplus {
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  font-size: .8em;
+  padding: 10px 20px 10px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-position: 8px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px; }
+
 .container {
   color: #888;
   margin: 0 auto;
@@ -91,46 +103,19 @@
       border-width: 4px; }
 
 .btn-facebook {
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
-  font-size: .8em;
-  padding: 10px 20px 10px 32px;
-  text-decoration: none;
-  text-transform: uppercase;
+  /* Aqui se implemento un @extend en Sass para generar CSS */
   background-color: #3B5998;
-  background-image: url("../images/icon-facebook.png");
-  background-position: 8px 12px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px; }
+  background-image: url("../images/icon-facebook.png"); }
 
 .btn-twitter {
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
-  font-size: .8em;
-  padding: 10px 20px 10px 32px;
-  text-decoration: none;
-  text-transform: uppercase;
+  /* Aqui se implemento un @extend en Sass para generar CSS */
   background-color: #00ACED;
-  background-image: url("../images/icon-twitter.png");
-  background-position: 8px 12px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px; }
+  background-image: url("../images/icon-twitter.png"); }
 
 .btn-gplus {
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
-  font-size: .8em;
-  padding: 10px 20px 10px 32px;
-  text-decoration: none;
-  text-transform: uppercase;
+  /* Aqui se implemento un @extend en Sass para generar CSS */
   background-color: #DD4B39;
-  background-image: url("../images/icon-gplus.png");
-  background-position: 8px 12px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px; }
+  background-image: url("../images/icon-gplus.png"); }
 
 /* Sistema de Grillas */
 .col-1 {

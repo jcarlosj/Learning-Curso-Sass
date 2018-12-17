@@ -4,13 +4,11 @@ $social: ( facebook, #3B5998 ), ( twitter, #00ACED ), ( gplus, #DD4B39 );   // L
 // Iteramos sobre cada uno de los elementos de las listas anidadas
 @each $nombre-red, $color-red in $social {
     .btn-#{ $nombre-red } {
-        @include btn-social;
+        /* Aqui se implemento un @extend en Sass para generar CSS */
+        @extend %btn-social;
         background: {
             color: $color-red;
             image: url( '../images/icon-#{ $nombre-red }.png' );
-            position: 8px 12px;
-            repeat: no-repeat;
-            size: 20px 20px;
         }
     }
 }

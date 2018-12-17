@@ -21,8 +21,9 @@
     }
 }
 
-// Define estilos para botones Redes Sociales
-@mixin btn-social {
+// Placeholder Selector (Agrupa propieades que se repiten)
+// Este selector a diferencia del anterior (que era un mixin) no genera codigo a no ser que sea extendido desde otro selector
+%btn-social {
     border-radius: 4px;
     color: white;
     display: inline-block;
@@ -32,5 +33,10 @@
     text: {
         decoration: none;
         transform: uppercase;
+    }
+    background: {
+        position: 8px 12px;
+        repeat: no-repeat;
+        size: 20px 20px;
     }
 }    
