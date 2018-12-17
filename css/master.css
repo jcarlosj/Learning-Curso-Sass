@@ -1,3 +1,11 @@
+.box-sel, .box-new, .box-other {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.box-new {
+  color: pink; }
+
 .container {
   color: #888;
   margin: 0 auto;
