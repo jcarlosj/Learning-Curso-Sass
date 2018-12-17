@@ -11,6 +11,14 @@
   .box-new .este {
     text-align: center; }
 
+.btn, .btn-2 {
+  display: inline-block;
+  padding: 5px;
+  margin: 0; }
+
+.btn-2 {
+  color: yellow; }
+
 .container {
   color: #888;
   margin: 0 auto;

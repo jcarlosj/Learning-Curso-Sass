@@ -26,3 +26,22 @@
 .box-other {
     @extend .box-sel;
 }
+
+// Extends using Placeholder Selectors (Selectores de marcador de posicion)
+// Este tipo de selector debe hacer uso de un % y no va a generar por si solo codigo CSS, hasta ser extendido
+
+%selector {
+    // Elemento con las propiedades que van a ser extendidas 
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+}
+
+.btn {
+    @extend %selector;
+}
+.btn-2 {
+    color: yellow;
+    @extend %selector;
+}
+
