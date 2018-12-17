@@ -20,23 +20,3 @@
         @content;       // Indica que un mixin acepta bloques de cdigo completos
     }
 }
-
-// Placeholder Selector (Agrupa propieades que se repiten)
-// Este selector a diferencia del anterior (que era un mixin) no genera codigo a no ser que sea extendido desde otro selector
-%btn-social {
-    border-radius: 4px;
-    color: white;
-    display: inline-block;
-    font-size: .8em;
-    padding: 10px 20px 10px 32px;
-    // Anidando propiedades de CSS
-    text: {
-        decoration: none;
-        transform: uppercase;
-    }
-    background: {
-        position: 8px 12px;
-        repeat: no-repeat;
-        size: 20px 20px;
-    }
-}    
