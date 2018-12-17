@@ -36,6 +36,11 @@
   background-color: blue;
   font-size: 1.3rem; }
 
+/* Generado por Funciones */
+.fun-content {
+  color: rgba(255, 239, 228, 0.72);
+  background-color: rgba(106, 42, 0, 0.44); }
+
 .container {
   color: #888;
   margin: 0 auto;

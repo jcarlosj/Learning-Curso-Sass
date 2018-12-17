@@ -12,3 +12,21 @@ $color: rgba( $fcolor, .3 );                  // Funcion 'rgba' de Sass para Col
 // NOTA:
 //   Las funciones de introspeccion o inspeccion retornaran 'true/false' de acuerdo al cumplimiento
 //   nombre de: variable, mixin o funcion que se le pase, estos pueden pasarse con o sin comillas
+
+/* Generado por Funciones */
+// Funcion para aclarar un color
+@function aclarar( $color, $valor: 10% ) {
+    @return mix( white, $color, $valor );
+}
+// Funcion para oscurecer un color
+@function oscurecer( $color, $valor: 10% ) {
+    @return mix( black, $color, $valor );
+}
+
+.fun-content {
+    color: aclarar( $color, 60% );
+    background-color: oscurecer($color, 20% );
+}
+
+// NOTA:
+//   Las funciones deben ser declaradas primero antes de ser utilizadas
