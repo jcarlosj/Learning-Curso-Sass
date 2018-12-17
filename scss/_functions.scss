@@ -1,0 +1,6 @@
+// Functions
+$fvar: 100px;
+
+.fun-selector {
+    width: if( $fvar < 100px, $fvar, 100% );  // Funcion 'if' de Sass
+}
