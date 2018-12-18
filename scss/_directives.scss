@@ -1,0 +1,38 @@
+/* Generado usando la directiva @at-root */
+.content-article {
+    font-size: 1.2rem;
+
+    .header {
+        color: #999999;
+
+        .title {
+            font-size: 2.2em;
+        }
+        .sub-title {
+            font-size: 1.8em
+        }
+    }
+    .content {
+        color: #333333;
+        text-align: justify;
+        font-size: .9em;
+    }
+    .foot {
+        background-color: #C1C1C1;
+    }
+}
+
+@media only screen and ( min-width: 768px ) {
+    .header {
+        .title {
+            color: darkorange; 
+        }
+        .sub-title {
+            color: orange; 
+        }
+    }
+    .content {
+        font-size: 1.2rem;
+        text-align: unset;
+    }
+}

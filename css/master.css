@@ -1,3 +1,28 @@
+/* Generado usando la directiva @at-root */
+.content-article {
+  font-size: 1.2rem; }
+  .content-article .header {
+    color: #999999; }
+    .content-article .header .title {
+      font-size: 2.2em; }
+    .content-article .header .sub-title {
+      font-size: 1.8em; }
+  .content-article .content {
+    color: #333333;
+    text-align: justify;
+    font-size: .9em; }
+  .content-article .foot {
+    background-color: #C1C1C1; }
+
+@media only screen and (min-width: 768px) {
+  .header .title {
+    color: darkorange; }
+  .header .sub-title {
+    color: orange; }
+
+  .content {
+    font-size: 1.2rem;
+    text-align: unset; } }
 .box-sel, .box-new, .box-other {
   width: 100%;
   height: 100%;
