@@ -1,258 +1,74 @@
-/* Generado usando la directiva @at-root */
-.content-article {
-  font-size: 1.2rem; }
-  .content-article .header {
-    color: #999999; }
-    .title {
-      font-size: 2.2em; }
+/*
+Error: Invalid US-ASCII character "\xC3"
+        on line 7 of scss/_mixins.scss
+        from line 4 of scss/master.scss
 
-    .sub-title {
-      font-size: 1.8em; }
-  .content {
-    color: #333333;
-    text-align: justify;
-    font-size: .9em; }
-  .content-article .foot {
-    background-color: #C1C1C1; }
+2: @mixin box( $bg: #F2F2F2, $radius: null, $space: 20px ) {
+3:     background-color: $bg;
+4:     // Valida si el valor de radius NO esta asignado en pixeles
+5:     @if unit( $radius ) != 'px' {
+6:         @error 'La unidad de medida debe ser en pixeles';
+7:         @debug 'El valor ingresado es: ' + $radius;         // La ejecución no continua. La directiva @error detiene la ejecución y
+8:         $radius: 1px * $radius;                             // Lanza el respectivo error dentro del archivo css final, en la terminal donde se esta procesando Sass a CSS y en el navegador
+9:     }
+10:     @else {
+11:         border-radius: $radius;
+12:     }
 
-@media only screen and (min-width: 768px) {
-  .header .title {
-    color: darkorange; }
-  .header .sub-title {
-    color: orange; }
-
-  .content {
-    text-align: unset; } }
-  .content {
-    font-size: 1.2rem; }
-
-.box-sel, .box-new, .box-other {
-  width: 100%;
-  height: 100%;
-  position: relative; }
-  .box-sel .big, .box-new .big, .box-other .big {
-    font-size: 1.2rem;
-    padding: 20px; }
-
-.box-new {
-  color: pink; }
-  .box-new .este {
-    text-align: center; }
-
-.btn, .btn-2 {
-  display: inline-block;
-  padding: 5px;
-  margin: 0; }
-
-.btn-2 {
-  color: yellow; }
-
-.btn-facebook, .btn-twitter, .btn-gplus {
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
-  font-size: .8em;
-  padding: 10px 20px 10px 32px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-position: 8px 12px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px; }
-
-.fun-selector {
-  width: 99px;
-  background-color: blue;
-  font-size: 1.3rem; }
-
-/* Generado por Funciones */
-.fun-content {
-  color: rgba(255, 239, 228, 0.72);
-  background-color: rgba(106, 42, 0, 0.44); }
-
-.container {
-  color: #888;
-  margin: 0 auto;
-  max-width: 680px;
-  padding: 0 20px; }
-
-.box {
-  background-color: #E6EBE0;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  padding: 10px;
-  color: #444; }
-  .box .head {
-    border-bottom: 1px solid #9BC1BC;
-    padding-bottom: 10px; }
-    .box .head h3 {
-      color: #5CA4A9;
-      margin: 0; }
-  .box .content {
-    padding-top: 10px; }
-
-.box-grey {
-  background-color: #2B3A34;
-  border-radius: 6px;
-  margin-bottom: 50px;
-  padding: 25px;
-  color: white; }
-
-/* Forma 1: */
-.selector {
-  padding: 20px; }
-  @media (min-width: 680px) and (max-width: 1024px) {
-    .selector {
-      padding: 10px; } }
-
-/* Forma 2: */
-@media (min-width: 680px) and (max-width: 1024px) {
-  .selector {
-    padding: 20px; }
-
-  .selector-2 {
-    padding: 30px; }
-
-  .selector-3 {
-    padding: 40px; } }
-.btn {
-  background-color: #9BC1BC;
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
-  font-size: .8em;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase; }
-  .btn:hover {
-    opacity: .8; }
-  .btn-cta {
-    background-color: #ED6A5A;
-    padding-left: 30px;
-    position: relative; }
-    .btn-cta::before {
-      content: '';
-      display: block;
-      left: 15px;
-      position: absolute;
-      top: 18px;
-      border-color: transparent;
-      border-left-color: white;
-      border-style: solid;
-      border-width: 4px; }
-
-.btn-facebook {
-  /* Aqui se implemento un @extend en Sass para generar CSS */
-  background-color: #3B5998;
-  background-image: url("../images/icon-facebook.png"); }
-
-.btn-twitter {
-  /* Aqui se implemento un @extend en Sass para generar CSS */
-  background-color: #00ACED;
-  background-image: url("../images/icon-twitter.png"); }
-
-.btn-gplus {
-  /* Aqui se implemento un @extend en Sass para generar CSS */
-  background-color: #DD4B39;
-  background-image: url("../images/icon-gplus.png"); }
-
-/* Sistema de Grillas */
-.col-1 {
-  margin: 0 10px;
-  width: 64px; }
-
-.col-2 {
-  margin: 0 10px;
-  width: 128px; }
-
-.col-3 {
-  margin: 0 10px;
-  width: 192px; }
-
-.col-4 {
-  margin: 0 10px;
-  width: 256px; }
-
-.col-5 {
-  margin: 0 10px;
-  width: 320px; }
-
-.col-6 {
-  margin: 0 10px;
-  width: 384px; }
-
-.col-7 {
-  margin: 0 10px;
-  width: 448px; }
-
-.col-8 {
-  margin: 0 10px;
-  width: 512px; }
-
-.col-9 {
-  margin: 0 10px;
-  width: 576px; }
-
-.col-10 {
-  margin: 0 10px;
-  width: 640px; }
-
-.col-11 {
-  margin: 0 10px;
-  width: 704px; }
-
-.col-12 {
-  margin: 0 10px;
-  width: 768px; }
-
-/* Sistema de margenes izquierdos */
-.pre-1 {
-  margin-left: 84px; }
-
-.pre-2 {
-  margin-left: 168px; }
-
-.pre-3 {
-  margin-left: 252px; }
-
-.pre-4 {
-  margin-left: 336px; }
-
-.pre-5 {
-  margin-left: 420px; }
-
-.pre-6 {
-  margin-left: 504px; }
-
-.pre-7 {
-  margin-left: 588px; }
-
-.pre-8 {
-  margin-left: 672px; }
-
-.pre-9 {
-  margin-left: 756px; }
-
-.pre-10 {
-  margin-left: 840px; }
-
-.pre-11 {
-  margin-left: 924px; }
-
-body {
-  color: #444;
-  font-family: "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 0; }
-  body h1 {
-    color: #888;
-    font-size: 2em;
-    line-height: 1.2em;
-    margin: 1em; }
-  body h2 {
-    font-size: 1.5em;
-    line-height: 1.2em;
-    margin: 0 0 .5em 0; }
-
-/*# sourceMappingURL=master.css.map */
+Backtrace:
+scss/_mixins.scss:7
+scss/master.scss:4
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/util.rb:1090:in `rescue in block in find_encoding_error'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/util.rb:1087:in `block in find_encoding_error'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/util.rb:1086:in `each'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/util.rb:1086:in `each_with_index'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/util.rb:1086:in `find_encoding_error'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/util.rb:814:in `check_sass_encoding'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/engine.rb:444:in `check_encoding!'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/engine.rb:400:in `_to_tree'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/engine.rb:321:in `to_tree'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:88:in `block in with_import'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:135:in `with_frame'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:88:in `with_import'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:135:in `with_frame'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:79:in `with_base'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `each'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/home/jcarlosj/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xC3\"\A         on line 7 of scss/_mixins.scss\A         from line 4 of scss/master.scss\A \A 2: @mixin box( $bg: #F2F2F2, $radius: null, $space: 20px ) {\A 3:     background-color: $bg;\A 4:     // Valida si el valor de radius NO esta asignado en pixeles\A 5:     @if unit( $radius ) != 'px' {\A 6:         @error 'La unidad de medida debe ser en pixeles';\A 7:         @debug 'El valor ingresado es: ' + $radius;         // La ejecución no continua. La directiva @error detiene la ejecución y\A 8:         $radius: 1px * $radius;                             // Lanza el respectivo error dentro del archivo css final, en la terminal donde se esta procesando Sass a CSS y en el navegador\A 9:     }\A 10:     @else {\A 11:         border-radius: $radius;\A 12:     }"; }
