@@ -12,7 +12,8 @@
             font-size: 1.8em
         }
     }
-    .content {
+    // Aplica como selector de linea
+    @at-root .content {
         color: #333333;
         text-align: justify;
         font-size: .9em;
