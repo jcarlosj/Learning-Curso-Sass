@@ -1,6 +1,12 @@
 // Define estilos para las cajas
 @mixin box( $bg: #F2F2F2, $radius: null, $space: 20px ) {
     background-color: $bg;
+    // Valida si el valor de radius posee una unidad de medida valida
+    @if unitless( $radius ) {
+        @warn 'La unidad de medida es requerida para definir el radio del borde';
+        @debug 'radius ' + $radius;
+        $radius: 1px * $radius;
+    }
     border-radius: $radius;
     margin-bottom: $space;
     padding: ( $space / 2 );
