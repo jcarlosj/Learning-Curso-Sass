@@ -3,9 +3,10 @@
   font-size: 1.2rem; }
   .content-article .header {
     color: #999999; }
-    .content-article .header .title {
+    .title {
       font-size: 2.2em; }
-    .content-article .header .sub-title {
+
+    .sub-title {
       font-size: 1.8em; }
   .content {
     color: #333333;

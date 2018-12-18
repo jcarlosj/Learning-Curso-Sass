@@ -5,12 +5,16 @@
     .header {
         color: #999999;
 
-        .title {
-            font-size: 2.2em;
+        // Aplica como selector de bloque
+        @at-root {
+            .title {
+                font-size: 2.2em;
+            }
+            .sub-title {
+                font-size: 1.8em
+            }    
         }
-        .sub-title {
-            font-size: 1.8em
-        }
+        
     }
     // Aplica como selector de linea
     @at-root .content {
