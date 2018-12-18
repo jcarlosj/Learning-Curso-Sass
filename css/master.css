@@ -22,8 +22,10 @@
     color: orange; }
 
   .content {
-    font-size: 1.2rem;
     text-align: unset; } }
+  .content {
+    font-size: 1.2rem; }
+
 .box-sel, .box-new, .box-other {
   width: 100%;
   height: 100%;

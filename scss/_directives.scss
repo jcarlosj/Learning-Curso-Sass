@@ -37,7 +37,10 @@
         }
     }
     .content {
-        font-size: 1.2rem;
+        // Aplica como selector excluyente de directiva (en este caso @media)
+        @at-root ( without: media ) {
+            font-size: 1.2rem;
+        }
         text-align: unset;
     }
 }
