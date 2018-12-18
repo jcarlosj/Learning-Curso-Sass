@@ -11,7 +11,17 @@ $color: (
     super: blue
 );
 
+// Mixins
 $box-bg: #E6EBE0;
 $box-br: 5px;
 
+// Funciones
+$fvar: 99px;
+$fcolor: #FF6600;
+$color: rgba( $fcolor, .3 );                  // Funcion 'rgba' de Sass para Colores
 
+
+// Control @each Lista anidada.
+$social: ( facebook, #3B5998 ), ( twitter, #00ACED ), ( gplus, #DD4B39 );   
+// Control @while
+$e: 1;

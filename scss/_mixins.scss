@@ -1,11 +1,15 @@
-// Define estilos para las cajas
+// Mixins
+
+// Define
+// $radius: valor en pixeles para radio del borde
+// $bg: color del fondo
+// $space: valor en pixeles para espaciado
+
 @mixin box( $bg: #F2F2F2, $radius: null, $space: 20px ) {
     background-color: $bg;
     // Valida si el valor de radius NO esta asignado en pixeles
     @if unit( $radius ) != 'px' {
         @error 'La unidad de medida debe ser en pixeles';
-        @debug 'El valor ingresado es: ' + $radius;         // La ejecución no continua. La directiva @error detiene la ejecución y
-        $radius: 1px * $radius;                             // Lanza el respectivo error dentro del archivo css final, en la terminal donde se esta procesando Sass a CSS y en el navegador
     }
     @else {
         border-radius: $radius;
@@ -21,3 +25,10 @@
         color: $text;
     }
 }
+
+// Define un MediaQuery como un Mixin
+@mixin mq-tablet {
+    @media ( min-width: 680px ) and ( max-width: 1024px ) {
+        @content;       // Indica que un mixin acepta bloques de cdigo completos
+    }
+} 

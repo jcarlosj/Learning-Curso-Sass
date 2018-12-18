@@ -1,8 +1,4 @@
 // Functions
-$fvar: 99px;
-$fcolor: #FF6600;
-$color: rgba( $fcolor, .3 );                  // Funcion 'rgba' de Sass para Colores
-
 .fun-selector {
     width: if( variable-exists( 'fvar' ) and $fvar < 100px, $fvar, 100% );  // true ($fvar)
     background-color: if( mixin-exists( $name: boxes ), $color, blue );   // false (blue)

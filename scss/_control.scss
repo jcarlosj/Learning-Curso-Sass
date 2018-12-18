@@ -1,5 +1,4 @@
 // Bucles/Ciclos
-$social: ( facebook, #3B5998 ), ( twitter, #00ACED ), ( gplus, #DD4B39 );   // Lista anidada.
 
 // Iteramos sobre cada uno de los elementos de las listas anidadas
 @each $nombre-red, $color-red in $social {
@@ -24,7 +23,6 @@ $social: ( facebook, #3B5998 ), ( twitter, #00ACED ), ( gplus, #DD4B39 );   // L
 
 /* Sistema de margenes izquierdos */
 // Iteramos para crear margenes izquierdos
-$e: 1;
 @while $e < 12 {
     .pre-#{ $e } {
         margin-left: ( 64px * $e ) + ( 20px * $e );
